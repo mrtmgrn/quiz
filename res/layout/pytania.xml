@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. W jakim domu jest Luna Lovegood?"
+        android:id="@+id/pytanie"
+        android:textSize="16dp" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton android:id="@+id/jeden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gryffindor"
+            android:layout_marginBottom="16dp"
+            android:textSize="16dp"
+            android:paddingLeft="24dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/dwa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hufflepuff"
+            android:layout_marginBottom="16dp"
+            android:textSize="16dp"
+            android:paddingLeft="24dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/trzy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slytherin"
+            android:layout_marginBottom="16dp"
+            android:textSize="16dp"
+            android:paddingLeft="24dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/cztery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ravenclaw"
+            android:layout_marginBottom="16dp"
+            android:textSize="16dp"
+            android:paddingLeft="24dp"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/punkty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punkty: 0"
+        android:textSize="16dp" />
+
+</LinearLayout>
