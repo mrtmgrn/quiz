@@ -1,28 +1,31 @@
 package com.example.android.quiz;
 
-/**
- * {@link Word} represents a vocabulary word that the user wants to learn.
- * It contains a default translation and a Miwok translation for that word.
- */
 public class Word {
 
-    /** Default first answer*/
+    private String mPytanie;
+
+    /** First answer*/
     private String mPierwsza;
 
-    /** Miwok second answer */
+    /** Second answer */
     private String mDruga;
 
-    /** Miwok third answer */
+    /** Third answer */
     private String mTrzecia;
 
-    /** Miwok fourth answer */
+    /** Fourth answer */
     private String mCzwarta;
 
-    public Word(String pierwszaOdpowiedz, String drugaOdpowiedz, String trzeciaOdpowiedz, String czwartaOdpowiedz) {
+    public Word(String pytanie, String pierwszaOdpowiedz, String drugaOdpowiedz, String trzeciaOdpowiedz, String czwartaOdpowiedz) {
+        mPytanie = pytanie;
         mPierwsza = pierwszaOdpowiedz;
         mDruga = drugaOdpowiedz;
         mTrzecia = trzeciaOdpowiedz;
         mCzwarta = czwartaOdpowiedz;
+    }
+
+    public String getPytanie() {
+        return mPytanie;
     }
 
     public String getPierwszaOdpowiedz() {

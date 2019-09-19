@@ -16,16 +16,10 @@ public class QActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz_list);
 
-        // Create a list of words
+        // Creates a QandA
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Gryffindor", "Hufflepuff", "Slytherin", "Ravenclaw"));
-//        words.add(new Word("mustard yellow", "chiwiiṭә"));
-//        words.add(new Word("dusty yellow", "ṭopiisә"));
-//        words.add(new Word("green", "chokokki"));
-//        words.add(new Word("brown", "ṭakaakki"));
-//        words.add(new Word("gray", "ṭopoppi"));
-//        words.add(new Word("black", "kululli"));
-//        words.add(new Word("white", "kelelli"));
+        words.add(new Word("1. W jakim domu jest Luna Lovegood?", "Gryffindor", "Hufflepuff", "Slytherin", "Ravenclaw"));
+        words.add(new Word("2. Jak nazywał się ojciec Harry'ego?", "Todd", "Andrew", "James", "Finn"));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

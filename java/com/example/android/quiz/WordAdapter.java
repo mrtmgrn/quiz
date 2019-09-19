@@ -40,32 +40,26 @@ public class WordAdapter extends ArrayAdapter<Word>  {
         // Get the {@link Word} object located at this position in the list
         Word currentWord = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID miwok_text_view.
+        // Find the TextView in the list_item.xml layout with the ID of text_view.
+        TextView pytanieTextView = (TextView) listItemView.findViewById(R.id.pytanie);
+        pytanieTextView.setText(currentWord.getPytanie());
+
         TextView jedenTextView = (TextView) listItemView.findViewById(R.id.jeden);
-        // Get the Miwok translation from the currentWord object and set this text on
-        // the Miwok TextView.
         jedenTextView.setText(currentWord.getPierwszaOdpowiedz());
 
-        // Find the TextView in the list_item.xml layout with the ID default_text_view.
         TextView dwaTextView = (TextView) listItemView.findViewById(R.id.dwa);
-        // Get the default translation from the currentWord object and set this text on
-        // the default TextView.
         dwaTextView.setText(currentWord.getDrugaOdpowiedz());
 
-        // Find the TextView in the list_item.xml layout with the ID default_text_view.
+
         TextView trzyTextView = (TextView) listItemView.findViewById(R.id.trzy);
-        // Get the default translation from the currentWord object and set this text on
-        // the default TextView.
         trzyTextView.setText(currentWord.getTrzeciaOdpowiedz());
 
         // Find the TextView in the list_item.xml layout with the ID default_text_view.
         TextView czteryTextView = (TextView) listItemView.findViewById(R.id.cztery);
-        // Get the default translation from the currentWord object and set this text on
-        // the default TextView.
         czteryTextView.setText(currentWord.getCzwartaOdpowiedz());
 
 
-        // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
+        // Return the whole list item layout (containing TextViews) so that it can be shown in
         // the ListView.
         return listItemView;
     }
