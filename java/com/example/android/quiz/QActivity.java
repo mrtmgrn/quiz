@@ -20,6 +20,7 @@ public class QActivity extends AppCompatActivity {
         ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("1. W jakim domu jest Luna Lovegood?", "Gryffindor", "Hufflepuff", "Slytherin", "Ravenclaw"));
         words.add(new Word("2. Jak nazywał się ojciec Harry'ego?", "Todd", "Andrew", "James", "Finn"));
+        words.add(new Word("3. Jakiego zwierzaka miała Hermiona?", "Kota", "Ropuchę", "Szczura", "Sowę"));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
@@ -36,6 +37,9 @@ public class QActivity extends AppCompatActivity {
     }
 
     int number = 0;
+
+
+//    Instruction to what happens when a radio button is clicked
 
     public void onRadioButtonClicked(View view) {
         RadioButton gryffindorCheckBox = (RadioButton) findViewById(R.id.jeden);
@@ -62,7 +66,7 @@ public class QActivity extends AppCompatActivity {
             displayQuantity(number);
         }
     }
-
+//      Sums up the points
     private void displayQuantity(int punkty) {
         TextView quantityTextView = (TextView) findViewById(R.id.punkty);
         quantityTextView.setText("Punkty: " + punkty);
